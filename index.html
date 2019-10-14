@@ -144,9 +144,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-            <span class="fa-stack fa-4x">
-                <i class="fas fa-brain fa-stack-1x fa-inverse" style="color: black;"></i>
-              </span>
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-brain fa-stack-1x fa-inverse" style="color: black;"></i>
+          </span>
           <h2 class="section-heading text-uppercase">O que fazemos</h2>
           <h3 class="section-subheading text-muted">Linha temportal dos nossos objetivos</h3>
         </div>
@@ -267,7 +267,7 @@
         <div class="col-lg-12 text-center">
           <h4 class="section-heading text-uppercase">ou</h4>
           <h2 class="section-heading text-uppercase">Mande uma mensagem</h2>
-          <h3 class="section-subheading text-muted">Dúvida? Informações? Pergunta pra gente :)</h3>
+          <h3 class="section-subheading" style="color: white;">Dúvida? Informações? Pergunta pra gente :)</h3>
         </div>
       </div>
 
@@ -290,7 +290,7 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="form_name">Nome *</label>
+                          <label for="form_name" style="color: white;">Nome *</label>
                           <input id="form_name" type="text" name="name" class="form-control" placeholder="Nome *"
                             required="required" data-error="Por favor digite seu nome ">
                           <div class="help-block with-errors"></div>
@@ -298,7 +298,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="form_lastname">Empresa *</label>
+                          <label for="form_lastname" style="color: white;">Empresa *</label>
                           <input id="form_lastname" type="text" name="surname" class="form-control"
                             placeholder="Empresa*" required="required" data-error="Por favor digite sua empresa">
                           <div class="help-block with-errors"></div>
@@ -308,7 +308,7 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="form_email">Email *</label>
+                          <label for="form_email" style="color: white;">Email *</label>
                           <input id="form_email" type="email" name="email" class="form-control" placeholder="Email *"
                             required="required" data-error="Por favor digite seu email.">
                           <div class="help-block with-errors"></div>
@@ -316,7 +316,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="form_need">Especifique sua necessidade *</label>
+                          <label for="form_need" style="color: white;">Especifique sua necessidade *</label>
                           <select id="form_need" name="need" class="form-control" required="required"
                             data-error="Específique sua necessidade.">
                             <option value=""></option>
@@ -330,9 +330,26 @@
                       </div>
                     </div>
                     <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_phone" style="color: white;">Telefone *</label>
+                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                          <script
+                            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+                          <input type="text" class="form-control" minlength="15" placeholder="Telefone"
+                            required="required" id="telefone" name="telefone"
+                            data-error="Por favor digite seu telefone." maxlength="15">
+                          <script type="text/javascript">
+                            $("#telefone, #celular").mask("(00) 00000-0000");
+                          </script>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label for="form_message">Mensagem *</label>
+                          <label for="form_message" style="color: white;">Mensagem *</label>
                           <textarea id="form_message" name="message" class="form-control"
                             placeholder="Digite uma mensagem *" rows="4" required="required"
                             data-error="Por favor digite sua mensagem."></textarea>
@@ -372,7 +389,7 @@
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-                <a href="https://www.facebook.com/marktinsdigital">
+              <a href="https://www.facebook.com/marktinsdigital">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>

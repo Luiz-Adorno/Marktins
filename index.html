@@ -91,7 +91,24 @@
         <div class="intro-lead-in">Marketing Digital</div>
         <div class="intro-heading text-uppercase"></div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Entre em contato</a>
+        <ul class="list-inline social-buttons" style="margin-top: 20px;">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/marktinsdigital">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/marktinsdigital/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/company/marktins/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
       </div>
+
     </div>
   </header>
 
@@ -123,9 +140,11 @@
             <i class="fas  fa-pencil-alt fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Mídia de Performance</h4>
-          <p class="text-muted">Utilizamos as ferramentas do Google ads, Facebook ads e conhecimento técnico para promover sua empresa de forma mais otimizada</p>
+          <p class="text-muted">Utilizamos as ferramentas do Google ads, Facebook ads e conhecimento técnico para
+            promover sua empresa de forma mais otimizada</p>
           <p class="text-muted">Impulsionamos seu conteúdo/empresa com objetivo de encontrar possíveis clientes</p>
-          <p class="text-muted">Aumento no público atingindo e no retorno das campanhas Marktins em relação as campanhas normais</p>
+          <p class="text-muted">Aumento no público atingindo e no retorno das campanhas Marktins em relação as campanhas
+            normais</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -133,8 +152,10 @@
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Desenvolvimento Web</h4>
-          <p class="text-muted">Implementamos e estruturamos seu modelo de negócio na web com a criação do seu site próprio e com ferramentas de Tracking, Tagueamento e a implementação de SEO</p>
-          <p class="text-muted">Geramos dados de comportamento dos clientes e convertemos em conhecimento para otimizar as ações no seu site</p>
+          <p class="text-muted">Implementamos e estruturamos seu modelo de negócio na web com a criação do seu site
+            próprio e com ferramentas de Tracking, Tagueamento e a implementação de SEO</p>
+          <p class="text-muted">Geramos dados de comportamento dos clientes e convertemos em conhecimento para otimizar
+            as ações no seu site</p>
           <p class="text-muted">Aumento na satisfação e fidelização do cliente</p>
         </div>
         <div class="col-md-4">
@@ -143,7 +164,8 @@
             <i class="fas fa-search fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Nutrição de Leads</h4>
-          <p class="text-muted">Consiste em saber qual produto/serviço é o mais adequado para se enviar a determinados clientes em potencial</p>
+          <p class="text-muted">Consiste em saber qual produto/serviço é o mais adequado para se enviar a determinados
+            clientes em potencial</p>
           <p class="text-muted">Processo automatizado, rápido e com baixo custo, ótima opção para empresa de qualquer
             tamanho</p>
           <p class="text-muted">Aumento no número de vendas direcionados a clientes existentes</p>
@@ -263,6 +285,27 @@
     </div>
   </section>
 
+  <!-- 
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Mensagem enviada</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Em breve retornaremos o seu contato via telefone, obrigado por entrar em contato!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
   <!-- Contact -->
   <section class="page-section" id="contact">
     <div class="container">
@@ -286,11 +329,17 @@
       </div>
 
       <div class="row">
+
         <body>
           <div class="container">
             <div class="row">
               <div class="col-xl-8 offset-xl-2 py-5">
-                <form id="contact-form" method="post" action="/index" role="form" netlify>
+                <form id="contact-form" method="post" onsubmit="myFunction()" role="form" netlify>
+                  <script>
+                    function myFunction() {
+                      alert("Em breve retornaremos o seu contato via telefone, obrigado por entrar em contato!");
+                    }
+                  </script>
                   <div class="messages"></div>
                   <div class="controls">
                     <div class="row">
